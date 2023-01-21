@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNKids</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+     <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="header-title">Банк</h1>
+        </header>
+        <main>
+            <section class="balance">
+                <h2>
+                    Общий баланс
+                    <a href="#">в евро</a>
+                </h2>
+                <p class="balance-quantity">35,83 €</p>
+            </section>
+            <section class="my-children">
+                <p class="title">Мои дети</p>
+                <div class="children">
+                    <div class="child-card">
+                        <img src="child1.png" alt="Child photo">
+                        <p>Полина</p>
+                    </div>
+                    <div class="child-card">
+                        <img src="child1.png" alt="Child photo">
+                        <p>Максим</p>
+                    </div>
+                </div>
+            </section>
+            <section class="bank-requests">
+                <p class="title">Запросы</p>
+                <div class="request-card">
+                    <img src="child1.png" alt="Child photo">
+                    <div class="request-data">
+                        <p class="request-title">Вывод средств</p>
+                        <p class="request-date">2023.01.01 14:07</p>
+                    </div>
+                </div>
+
+                <div class="request-card">
+                    <img src="child1.png" alt="Child photo">
+                    <div class="request-data">
+                        <p class="request-title">Оформление кредита</p>
+                        <p class="request-date">2023.01.01 14:07</p>
+                    </div>
+                </div>
+
+            </section>
+            <section class="bank-settings">
+                <p class="title">Управление банком</p>
+                <ul class="bank-settings-list">
+                    <li><a href="#" class="bank-setting">Изменение условий по вкладам</a></li>
+                    <li><a href="#" class="bank-setting">Изменение условий по кредитам</a></li>
+                    <li><a href="#" class="bank-setting">Изменение условий тарифа</a></li>
+                    <li><a href="#" class="bank-setting">Создание пользовательской акции</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <button disabled type="button" class="nav-bank" aria-label="Банк"></button>
+                <button type="button" class="nav-course" aria-label="Курс"></button>
+                <button type="button" class="nav-tasks" aria-label="Задания"></button>
+                <button type="button" class="nav-profile" aria-label="Профиль"></button>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

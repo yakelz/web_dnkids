@@ -1,0 +1,230 @@
+body {
+    margin: 0 auto;
+    background: #C3BFBF;
+    font-family: 'Nunito', sans-serif;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: auto;
+    max-width: 360px;
+    background-color: #F9F9F9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.header-title::before {
+    content: "\f0c9";
+    font-family: FontAwesome;
+    font-size: 20px;
+    padding-right: 10px;
+}
+header{
+    display: flex;
+    padding: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+}
+
+main {
+    padding: 16px;
+    flex: auto 1 auto;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+.balance {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 16px;
+    line-height: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.balance h2 {
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.balance a {
+    color: gray;
+}
+.balance-quantity {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 18px;
+}
+
+section .title {
+    margin-bottom: 10px;
+    margin-left: 12px;
+    font-size: 16px;
+}
+
+.children {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.child-card {
+    display: flex;
+    border-radius: 22px;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+    background-color: #9B9B9B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.child-card img {
+    width: 55px;
+    height: 55px;
+    border-radius: 22px;
+    object-fit: cover;
+    margin-right: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.child-card p {
+    margin: 0;
+}
+
+.request-card {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #E0E0E0;
+    border-radius: 22px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 12px;
+}
+
+.request-card p {
+    margin: 0;
+}
+.request-card img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.request-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.request-date {
+    font-size: 12px;
+}
+.request-card::after {
+    content: "\f061";
+    font-family: FontAwesome;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+footer nav {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 20px 0px 0px;
+    margin: 0 16px;
+}
+button {
+    border: 0;
+}
+footer nav button{
+    padding: 8px;
+    background: none;
+	color: #C3BFBF;
+	cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 25px;
+    transition: border-bottom 0.3s ease-out;
+}
+
+footer nav button:hover {
+    border-bottom: 3px solid grey;
+    color: gray;
+    border-radius: 5px;
+}
+
+footer nav button:disabled{
+    cursor: none;
+    border-bottom: 3px solid grey;
+    color: gray;
+    border-radius: 5px;
+}
+
+.nav-bank::before {
+    content: "\f19c";
+}
+.nav-course::before {
+    content: "\f144";
+}
+
+.nav-profile::before {
+    content: "\f007";
+}
+
+.nav-tasks::before {
+    content: "\f0ca";
+}
+
+.bank-settings-list {
+    background-color: #F1F1F1;
+    padding: 7px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.bank-settings-list li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.bank-settings-list li::after {
+    margin-left: auto;
+    content: "\f105";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: gray;
+}
+
+.bank-setting {
+    color: gray;
+}
+
+.bank-settings-list li:not(:last-child){
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.bank-setting:hover {
+    color: black;
+}
+
+.bank-settings-list li:not(:last-child):hover{
+    border-bottom: 1px solid black;
+}
